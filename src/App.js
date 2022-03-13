@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import ResumePage from "./pages/ResumePage";
+//
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/page-1" element={<ResumePage id={1} />} />
+        <Route path="/page-2" element={<ResumePage id={2} />} />
+        <Route path="/page-3" element={<ResumePage id={3} />} />
+        <Route path="/page-4" element={<ResumePage id={4} />} />
+        <Route path="/page-5" element={<ResumePage id={5} />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </>
   );
 }
 

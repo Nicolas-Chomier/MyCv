@@ -1,0 +1,16 @@
+$main-bg-color: rgba(187, 183, 183, 0.664);
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $main-bg-color;
+  font-size: 1vw;
+  /* background-image: url("../../public/images/defaut.jpg");
+  background-attachment: fixed;
+  background-size: contain; */
+}
