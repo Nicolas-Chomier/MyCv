@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Nicolas-Chomier.github.io/MyCv",
   "name": "app",
   "version": "0.1.0",
+  "homepage": "https://Nicolas-Chomier.github.io/MyCv",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",
