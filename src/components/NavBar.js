@@ -9,7 +9,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 //import { pink } from "@mui/material/colors";
-import cvPdf from "../assets/shared/test.pdf";
+import cvPdf from "../Private/test.pdf";
 import { Link } from "react-router-dom";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Portal from "@mui/material/Portal";

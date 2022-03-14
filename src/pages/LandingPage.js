@@ -1,7 +1,6 @@
-import React /* useState, useEffect, useRef */ from "react";
+import React from "react";
 import ExperienceTile from "../components/ExperienceTile";
 import { Stack } from "@mui/material";
-//import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
   return (
