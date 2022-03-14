@@ -3,6 +3,7 @@ import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { Link } from "react-router-dom";
+import Typography from "@mui/material/Typography";
 //import Button from "@mui/material/Button";
 
 const ExperienceTile = ({ image, name, id }) => {
@@ -23,12 +24,14 @@ const ExperienceTile = ({ image, name, id }) => {
               style={{
                 position: "absolute",
                 color: "black",
-                top: 180,
+                top: 122,
                 left: "50%",
                 transform: "translateX(-50%)",
               }}
             >
-              {name}
+              <Typography variant="h3" align="center">
+                {name}
+              </Typography>
             </div>
           </div>
         </CardContent>

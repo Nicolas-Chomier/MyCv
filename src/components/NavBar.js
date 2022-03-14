@@ -8,27 +8,27 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-//import { pink } from "@mui/material/colors";
 import cvPdf from "../Private/test.pdf";
 import { Link } from "react-router-dom";
-import ClickAwayListener from "@mui/material/ClickAwayListener";
-import Portal from "@mui/material/Portal";
-import InfoTile from "./InfoTile";
+import Popover from "@mui/material/Popover";
+import PopUp from "./PopUp";
+import { grey } from "@mui/material/colors";
 
 const NavBar = () => {
+  //
+  const [anchorEl, setAnchorEl] = useState(null);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+  //
   const myGithub = "https://github.com/Nicolas-Chomier";
   const myLinkedin = "https://www.linkedin.com/in/nicolas-chomier-88621b107/";
-  const style = { fontSize: 25 };
-  //test
-  const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    setOpen((prev) => !prev);
-  };
-
-  const handleClickAway = () => {
-    setOpen(false);
-  };
+  const style = { fontSize: 25, color: grey[900] };
 
   return (
     <Card sx={{ maxWidth: 250 }}>
@@ -37,7 +37,7 @@ const NavBar = () => {
           direction="column"
           justifyContent="center"
           alignItems="center"
-          spacing={0}
+          spacing={1}
         >
           <IconButton aria-label="home">
             <Link to={"/"}>
@@ -47,16 +47,33 @@ const NavBar = () => {
           <IconButton aria-label="download" href={cvPdf}>
             <FileDownloadIcon sx={style} />
           </IconButton>
-          <ClickAwayListener onClickAway={handleClickAway}>
-            <IconButton aria-label="info" onClick={handleClick}>
+          <div>
+            <IconButton
+              aria-label="info"
+              aria-describedby={id}
+              onClick={handleClick}
+            >
               <InfoIcon sx={style} />
-              {open ? (
-                <Portal>
-                  <InfoTile />
-                </Portal>
-              ) : null}
             </IconButton>
-          </ClickAwayListener>
+            <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorReference="anchorPosition"
+              anchorPosition={{ top: 100, left: 100 }}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+            >
+              <PopUp />
+            </Popover>
+          </div>
           <IconButton aria-label="gitHub" href={myGithub}>
             <GitHubIcon sx={style} />
           </IconButton>

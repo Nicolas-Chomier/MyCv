@@ -27,12 +27,13 @@ const ResumePage = ({ id }) => {
       <div className="texts">
         <ContentTile id={id} />
       </div>
-      <div className="images">
-        <ImageTile id={id} />
-      </div>
       <div className="graph">
         <Chart data={chartList[id]} id={id} />
       </div>
+      <div className="images">
+        <ImageTile id={id} />
+      </div>
+
       <div className="bott">qdqzdzq</div>
     </div>
   );
