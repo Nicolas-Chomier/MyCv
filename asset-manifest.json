@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MyCv.github.io/static/css/main.54a7ebb5.css",
-    "main.js": "/MyCv.github.io/static/js/main.cee28017.js",
-    "static/media/test.pdf": "/MyCv.github.io/static/media/test.fb105e693b9ada40149e.pdf",
-    "index.html": "/MyCv.github.io/index.html",
-    "main.54a7ebb5.css.map": "/MyCv.github.io/static/css/main.54a7ebb5.css.map",
-    "main.cee28017.js.map": "/MyCv.github.io/static/js/main.cee28017.js.map"
+    "main.css": "/MyCv/static/css/main.54a7ebb5.css",
+    "main.js": "/MyCv/static/js/main.bccb5a55.js",
+    "static/media/test.pdf": "/MyCv/static/media/test.fb105e693b9ada40149e.pdf",
+    "index.html": "/MyCv/index.html",
+    "main.54a7ebb5.css.map": "/MyCv/static/css/main.54a7ebb5.css.map",
+    "main.bccb5a55.js.map": "/MyCv/static/js/main.bccb5a55.js.map"
   },
   "entrypoints": [
     "static/css/main.54a7ebb5.css",
-    "static/js/main.cee28017.js"
+    "static/js/main.bccb5a55.js"
   ]
 }
