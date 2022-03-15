@@ -1,7 +1,7 @@
 // Radar Chart 1 Skills during Dalkia
 export const chart_1 = [
   {
-    subject: "Math",
+    subject: "",
     A: 120,
     fullMark: 150,
   },

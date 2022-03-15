@@ -1,7 +1,7 @@
 // Radar Chart 2 Skills during Covid
 export const chart_3 = [
   {
-    subject: "Math",
+    subject: "",
     A: 110,
     fullMark: 150,
   },

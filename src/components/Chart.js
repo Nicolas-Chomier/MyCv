@@ -5,7 +5,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   Radar,
-  Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const Chart = ({ data, id }) => {
@@ -25,19 +25,20 @@ const Chart = ({ data, id }) => {
   }, [id]);
 
   return (
-    <RadarChart outerRadius={200} width={730} height={70} data={data}>
-      <PolarGrid />
-      <PolarAngleAxis dataKey="subject" />
-      <PolarRadiusAxis angle={60} domain={[0, 150]} />
-      <Radar
-        name="Compétences"
-        dataKey="A"
-        stroke={color}
-        fill={color}
-        fillOpacity={0.7}
-      />
-      <Legend />
-    </RadarChart>
+    <ResponsiveContainer width="100%" height="100%">
+      <RadarChart outerRadius={200} data={data} fill="#FFFFFF">
+        <PolarGrid />
+        <PolarAngleAxis dataKey="subject" />
+        <PolarRadiusAxis angle={90} domain={[0, 200]} />
+        <Radar
+          name="Compétences"
+          dataKey="A"
+          stroke={color}
+          fill={color}
+          fillOpacity={0.7}
+        />
+      </RadarChart>
+    </ResponsiveContainer>
   );
 };
 export default Chart;

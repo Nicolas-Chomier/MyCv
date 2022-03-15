@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
@@ -14,7 +14,27 @@ import Popover from "@mui/material/Popover";
 import PopUp from "./PopUp";
 import { grey } from "@mui/material/colors";
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
 const NavBar = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   //
   const [anchorEl, setAnchorEl] = useState(null);
   const handleClick = (event) => {
@@ -28,16 +48,16 @@ const NavBar = () => {
   //
   const myGithub = "https://github.com/Nicolas-Chomier";
   const myLinkedin = "https://www.linkedin.com/in/nicolas-chomier-88621b107/";
-  const style = { fontSize: 25, color: grey[900] };
+  const style = { p: 0, fontSize: 25, color: grey[900] };
 
   return (
-    <Card sx={{ maxWidth: 250 }}>
-      <CardContent>
+    <Card /* sx={{ maxWidth: windowDimensions.width < 1115 ? 300 : 300 }} */>
+      <CardContent sx={{ p: 0 }}>
         <Stack
-          direction="column"
+          direction={windowDimensions.width < 1115 ? "row" : "column"}
           justifyContent="center"
-          alignItems="center"
-          spacing={1}
+          alignItems={windowDimensions.width < 1115 ? "flex-start" : "center"}
+          spacing={windowDimensions.width < 1115 ? 0 : 1}
         >
           <IconButton aria-label="home">
             <Link to={"/"}>

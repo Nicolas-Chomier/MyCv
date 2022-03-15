@@ -1,7 +1,7 @@
 // Radar Chart 2 Skills during Air Liquide
 export const chart_4 = [
   {
-    subject: "Math",
+    subject: "",
     A: 110,
     fullMark: 150,
   },

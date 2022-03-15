@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-const ContentTile = ({ id }) => {
+const ContentTile = ({ id, text }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>
@@ -11,8 +11,7 @@ const ContentTile = ({ id }) => {
           {id}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {text}
         </Typography>
       </CardContent>
     </Card>

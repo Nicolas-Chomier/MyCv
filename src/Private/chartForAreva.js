@@ -1,7 +1,7 @@
 // Radar Chart 1 Skills during Areva
 export const chart_5 = [
   {
-    subject: "Math",
+    subject: "",
     A: 120,
     fullMark: 150,
   },
