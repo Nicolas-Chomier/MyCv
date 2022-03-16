@@ -11,6 +11,11 @@ export const chart_4 = [
     fullMark: 150,
   },
   {
+    subject: "test",
+    A: 100,
+    fullMark: 150,
+  },
+  {
     subject: "English",
     A: 130,
     fullMark: 150,

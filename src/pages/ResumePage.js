@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import ContentTile from "../components/ContentTile";
-import ImageTile from "../components/ImageTile";
+import ImagePage from "../components/ImagePage";
 import Chart from "../components/Chart";
 import { chart_1 } from "../Private/chartForDalkia";
 import { chart_2 } from "../Private/chartForCovid";
@@ -19,6 +19,8 @@ const ResumePage = ({ id }) => {
   const chartList = [chart_1, chart_1, chart_2, chart_3, chart_4, chart_5];
   const expIntro = cts[`experience${id}`].intro;
   const expText = cts[`experience${id}`].text;
+  const expTitle1 = cts[`experience${id}`].title1;
+  const expTitle2 = cts[`experience${id}`].title2;
 
   return (
     <div className="grid-container-resume-page">
@@ -26,19 +28,19 @@ const ResumePage = ({ id }) => {
       <div className="left-panel"></div>
       <div className="right-panel"></div>
       <div className="intro">
-        <ContentTile id={id} text={expIntro} />
+        <ContentTile title={expTitle1} text={expIntro} />
       </div>
       <div className="navbar">
         <NavBar />
       </div>
       <div className="texts">
-        <ContentTile id={id} text={expText} />
+        <ContentTile title={expTitle2} text={expText} />
       </div>
       <div className="graph">
         <Chart data={chartList[id]} id={id} />
       </div>
       <div className="images">
-        <ImageTile id={id} />
+        <ImagePage id={id} />
       </div>
 
       <div className="bott">qdqzdzq</div>
