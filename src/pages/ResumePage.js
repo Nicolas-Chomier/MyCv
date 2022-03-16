@@ -13,7 +13,7 @@ import contents from "../Private/contents.json";
 const cts = JSON.parse(JSON.stringify(contents));
 
 /**
- * ! Voir pour améliorer l'import des charts, peut etre les faire gerer par le composant lui meme
+ * ! Voir pour améliorer l'import des charts, peut etre les faire gerer par le composant lui meme.
  */
 const ResumePage = ({ id }) => {
   const chartList = [chart_1, chart_1, chart_2, chart_3, chart_4, chart_5];
