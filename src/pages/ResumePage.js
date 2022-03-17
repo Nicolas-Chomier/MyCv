@@ -24,7 +24,7 @@ const ResumePage = ({ id }) => {
 
   return (
     <div className="grid-container-resume-page">
-      <div className="header">dqzd</div>
+      <div className="header"></div>
       <div className="left-panel"></div>
       <div className="right-panel"></div>
       <div className="intro">
@@ -42,8 +42,7 @@ const ResumePage = ({ id }) => {
       <div className="images">
         <ImagePage id={id} />
       </div>
-
-      <div className="bott">qdqzdzq</div>
+      <div className="bott"></div>
     </div>
   );
 };

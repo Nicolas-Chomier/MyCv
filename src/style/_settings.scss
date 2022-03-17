@@ -1,4 +1,4 @@
-$main-bg-color: rgba(0, 0, 0, 0.76);
+$main-bg-color: rgb(245, 245, 245);
 
 * {
   margin: 0%;
@@ -9,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $main-bg-color;
-  font-size: 1vw;
   /* background-image: url("../../public/images/defaut.jpg");
   background-attachment: fixed;
   background-size: contain; */

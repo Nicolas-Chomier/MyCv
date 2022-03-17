@@ -5,8 +5,16 @@ import Typography from "@mui/material/Typography";
 
 const ContentTile = ({ title, text }) => {
   return (
-    <Card sx={{ maxWidth: 0.9 }}>
-      <CardContent>
+    <Card
+      sx={{
+        maxWidth: 0.9,
+        backgroundColor: "transparent",
+        border: "none",
+        boxShadow: "none",
+      }}
+      className="content-tile"
+    >
+      <CardContent className="card-content-tile">
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>

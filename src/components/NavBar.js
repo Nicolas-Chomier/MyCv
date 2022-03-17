@@ -8,7 +8,9 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import cvPdf from "../Private/test.pdf";
+import dtPdf from "../Private/test.pdf";
 import { Link } from "react-router-dom";
 import Popover from "@mui/material/Popover";
 import PopUp from "./PopUp";
@@ -51,11 +53,13 @@ const NavBar = () => {
   const style = { p: 0, fontSize: 25, color: grey[900] };
 
   return (
-    <Card /* sx={{ maxWidth: windowDimensions.width < 1115 ? 300 : 300 }} */>
-      <CardContent sx={{ p: 0 }}>
+    <Card
+      sx={{ backgroundColor: "transparent", border: "none", boxShadow: "none" }}
+    >
+      <CardContent sx={windowDimensions.width < 1115 ? { p: 0 } : { pl: 3 }}>
         <Stack
           direction={windowDimensions.width < 1115 ? "row" : "column"}
-          justifyContent="center"
+          justifyContent="space-between"
           alignItems={windowDimensions.width < 1115 ? "flex-start" : "center"}
           spacing={windowDimensions.width < 1115 ? 0 : 1}
         >
@@ -66,6 +70,9 @@ const NavBar = () => {
           </IconButton>
           <IconButton aria-label="download" href={cvPdf}>
             <FileDownloadIcon sx={style} />
+          </IconButton>
+          <IconButton aria-label="download-dt" href={dtPdf}>
+            <FolderSharedIcon sx={style} />
           </IconButton>
           <div>
             <IconButton

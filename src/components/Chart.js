@@ -26,7 +26,7 @@ const Chart = ({ data, id }) => {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <RadarChart outerRadius={200} data={data} fill="#FFFFFF">
+      <RadarChart outerRadius={150} data={data} fill="#292929">
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />
         <PolarRadiusAxis angle={90} domain={[0, 200]} />

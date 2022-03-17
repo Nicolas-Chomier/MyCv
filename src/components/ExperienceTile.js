@@ -8,7 +8,10 @@ import Typography from "@mui/material/Typography";
 
 const ExperienceTile = ({ image, name, id }) => {
   return (
-    <Card sx={{ maxWidth: "20%", borderRadius: 0 }} className={"cardtest"}>
+    <Card
+      sx={{ maxWidth: "20%", borderRadius: 0 }}
+      className={"exp-tile-landing-page"}
+    >
       <div>
         <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
           <div style={{ position: "relative" }}>
@@ -23,8 +26,8 @@ const ExperienceTile = ({ image, name, id }) => {
             <div
               style={{
                 position: "absolute",
-                color: "black",
-                top: 122,
+                color: "#F8F8F8",
+                top: 0,
                 left: "50%",
                 transform: "translateX(-50%)",
               }}
