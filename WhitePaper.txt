@@ -1,2 +1,7 @@
 TO DO:
-repo git + mise en ligne auto sur github
+mise en ligne sur github
+inspiration :
+https://fr.wix.com/website-template/view/html/1892?siteId=51da8fb7-6543-4384-bae7-521503c8c1d0&metaSiteId=cba251c0-8412-4721-adbc-9638ad92e86b&originUrl=https%3A%2F%2Ffr.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fresumes-cvs&tpClick=view_button
+https://fr.wix.com/website-template/view/html/2846?siteId=9dabe0d0-1603-4a04-9bd6-7d9d9ca9e9cb&metaSiteId=3e8b1a18-1c30-41cf-87ac-e18816787ea8&originUrl=https%3A%2F%2Ffr.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fresumes-cvs&tpClick=view_button
+
+travailler sur la PopUp ...

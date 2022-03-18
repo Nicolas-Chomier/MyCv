@@ -1,22 +1,30 @@
 import React from "react";
-import ExperienceTile from "../components/ExperienceTile";
-import { Stack } from "@mui/material";
+import LandingPageCvName from "../components/LandingPageCvName";
+import LandingPageNavbar from "../components/LandingPageNavbar";
+import Datas from "../Private/contents.json";
+
+//* Main Datas
+const data = JSON.parse(JSON.stringify(Datas));
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={0}
-      >
-        <ExperienceTile image={"valve.jpeg"} name={"Dalkia"} id={1} />
-        <ExperienceTile image={"covid2.jpeg"} name={"Covid"} id={2} />
-        <ExperienceTile image={"hl.jpeg"} name={"LAB"} id={3} />
-        <ExperienceTile image={"alat.png"} name={"Air Liquide"} id={4} />
-        <ExperienceTile image={"nuclear.jpg"} name={"Areva"} id={5} />
-      </Stack>
+    <div className="grid-container-landing-page">
+      <div className="landing-page-cv-name">
+        <LandingPageCvName />
+      </div>
+      <div className="landing-page-navbar">
+        <LandingPageNavbar data={data} />
+      </div>
+      <div className="landing-page-photo"></div>
+      <div className="landing-page-intro"></div>
+      <div className="landing-page-chapter-ball"></div>
+      <div className="landing-page-resume"></div>
+      <div className="landing-page-experience-1"></div>
+      <div className="landing-page-experience-2"></div>
+      <div className="landing-page-experience-3"></div>
+      <div className="landing-page-experience-4"></div>
+      <div className="landing-page-experience-5"></div>
+      <div className="landing-page-bottom"></div>
     </div>
   );
 };
