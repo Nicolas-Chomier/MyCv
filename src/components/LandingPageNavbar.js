@@ -8,8 +8,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
-import cvPdf from "../Private/test.pdf";
-import dtPdf from "../Private/test.pdf";
+import pdf from "../doc/test.pdf";
 import Popover from "@mui/material/Popover";
 import PopUp from "./PopUp";
 
@@ -45,10 +44,10 @@ const LandingPageNavbar = ({ data }) => {
           alignItems="center"
           spacing={2}
         >
-          <IconButton aria-label="download" href={cvPdf} sx={buttonStyle}>
+          <IconButton aria-label="download" href={pdf} sx={buttonStyle}>
             <FilePresentIcon sx={iconStyle} />
           </IconButton>
-          <IconButton aria-label="download-dt" href={dtPdf} sx={buttonStyle}>
+          <IconButton aria-label="download-dt" href={pdf} sx={buttonStyle}>
             <FolderSharedIcon fontSize="large" sx={iconStyle} />
           </IconButton>
           <div>
