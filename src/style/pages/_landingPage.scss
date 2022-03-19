@@ -6,81 +6,82 @@
     grid-template-areas:
       "landing-page-cv-name landing-page-navbar"
       "landing-page-photo landing-page-intro"
-      "landing-page-photo landing-page-chapter-ball"
       "landing-page-resume landing-page-resume"
-      "landing-page-experience-1 landing-page-experience-1"
-      "landing-page-experience-2 landing-page-experience-2"
-      "landing-page-experience-3 landing-page-experience-3"
-      "landing-page-experience-4 landing-page-experience-4"
-      "landing-page-experience-5 landing-page-experience-5"
+      "landing-page-experience landing-page-experience"
+      "landing-page-skills-title landing-page-skills-title"
+      "landing-page-skills landing-page-skills"
       "landing-page-bottom landing-page-bottom";
-    grid-template-rows: 5vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 5vh 95vh 100vh 200vh 1vh 80vh 5vh;
     grid-template-columns: 50vw 50vw;
     overflow-x: hidden;
   }
   .landing-page-cv-name {
     grid-area: landing-page-cv-name;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 3vw;
   }
   .landing-page-navbar {
     grid-area: landing-page-navbar;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 3vw;
   }
   .landing-page-photo {
     grid-area: landing-page-photo;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 15vh;
+    margin-right: 4vw;
+    align-items: center; /*for vertically center*/
   }
   .landing-page-intro {
     grid-area: landing-page-intro;
     display: flex;
-    justify-content: center;
-  }
-  .landing-page-chapter-ball {
-    grid-area: landing-page-chapter-ball;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 36vh;
+    align-items: flex-end; /*for vertically center*/
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-resume {
     grid-area: landing-page-resume;
     display: flex;
     justify-content: center;
+    align-items: center; /*for vertically center*/
   }
-  .landing-page-experience-1 {
-    grid-area: landing-page-experience-1;
+  .landing-page-experience {
+    grid-area: landing-page-experience;
     display: flex;
     justify-content: center;
+    align-items: flex-start; /*for vertically center*/
   }
-  .landing-page-experience-2 {
-    grid-area: landing-page-experience-2;
+  .landing-page-skills-title {
+    grid-area: landing-page-skills-title;
     display: flex;
     justify-content: center;
+    align-items: flex-start; /*for vertically center*/
   }
-  .landing-page-experience-3 {
-    grid-area: landing-page-experience-3;
+  .landing-page-skills {
+    grid-area: landing-page-skills;
     display: flex;
     justify-content: center;
-  }
-  .landing-page-experience-4 {
-    grid-area: landing-page-experience-4;
-    display: flex;
-    justify-content: center;
-  }
-  .landing-page-experience-5 {
-    grid-area: landing-page-experience-5;
-    display: flex;
-    justify-content: center;
+    align-items: flex-start; /*for vertically center*/
+    .recharts-wrapper {
+      font-size: 1.3rem;
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-bottom {
     grid-area: landing-page-bottom;
     display: flex;
     justify-content: center;
+    align-items: center; /*for vertically center*/
   }
 }
 
-@media (min-width: 1px) {
+/* @media (min-width: 1px) {
   .grid-container-landing-page {
     display: grid;
     width: 100%;
@@ -160,4 +161,4 @@
     display: flex;
     justify-content: center;
   }
-}
+} */

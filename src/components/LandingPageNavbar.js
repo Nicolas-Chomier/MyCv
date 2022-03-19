@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
-import InfoTwoToneIcon from "@mui/icons-material/InfoTwoTone";
+import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
@@ -32,9 +32,9 @@ const LandingPageNavbar = ({ data }) => {
     border: "none",
     boxShadow: "none",
   };
-  const cardContentStyle = { p: 0, "&:last-child": { pb: 0 } };
+  const cardContentStyle = { pt: 2.4, "&:last-child": { pb: 0 } };
   const iconStyle = { fill: "#2A2A2A", fontSize: 30 };
-  const buttonStyle = { pt: 2.2 };
+  const buttonStyle = { p: 0 };
   //
   return (
     <Card sx={cardStyle}>
@@ -43,7 +43,7 @@ const LandingPageNavbar = ({ data }) => {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          spacing={1}
+          spacing={2}
         >
           <IconButton aria-label="download" href={cvPdf} sx={buttonStyle}>
             <FilePresentIcon sx={iconStyle} />
@@ -58,10 +58,7 @@ const LandingPageNavbar = ({ data }) => {
               onClick={handleClick}
               sx={buttonStyle}
             >
-              <InfoTwoToneIcon
-                fontSize="large"
-                sx={{ fill: "#CCA43D", fontSize: 30 }}
-              />
+              <InfoIcon fontSize="large" sx={iconStyle} />
             </IconButton>
             <Popover
               id={id}
@@ -69,7 +66,7 @@ const LandingPageNavbar = ({ data }) => {
               anchorEl={anchorEl}
               onClose={handleClose}
               anchorReference="anchorPosition"
-              anchorPosition={{ top: 100, left: 100 }}
+              anchorPosition={{ top: 55, left: 1000 }}
               anchorOrigin={{
                 vertical: "top",
                 horizontal: "left",
@@ -79,7 +76,7 @@ const LandingPageNavbar = ({ data }) => {
                 horizontal: "left",
               }}
             >
-              <PopUp />
+              <PopUp data={data} />
             </Popover>
           </div>
           <IconButton aria-label="gitHub" href={myGithub} sx={buttonStyle}>

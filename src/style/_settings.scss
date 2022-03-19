@@ -1,15 +1,14 @@
-$main-bg-color: rgb(236, 236, 236);
+$main-bg-color: rgb(243, 243, 243);
+$main-font-color: rgb(19, 19, 19);
 
 * {
   margin: 0%;
   padding: 0%;
+  color: $main-font-color;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $main-bg-color;
-  /* background-image: url("../../public/images/defaut.jpg");
-  background-attachment: fixed;
-  background-size: contain; */
 }

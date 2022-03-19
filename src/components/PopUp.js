@@ -5,9 +5,22 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Stack } from "@mui/material";
 
-const PopUp = () => {
+const PopUp = ({ data }) => {
+  const name = data.generalInfos.name;
+  const nickname = data.generalInfos.nickname;
+  const fullName = nickname + " " + name;
+  const type = data.generalInfos.type;
+  const email = data.generalInfos.email;
+  const phone = data.generalInfos.phone;
+  const age = data.generalInfos.age;
+  const city = data.generalInfos.city;
+  const driveInfo = data.generalInfos.driveInfo;
+  const imagePath = data.generalInfos.idImage;
+  //const gold = "#CCA43D";
+  const carmin = "#a63a50";
+
   return (
-    <Card sx={{ maxWidth: 350 }}>
+    <Card sx={{ maxWidth: 300 }}>
       <CardContent>
         <Stack
           direction="row"
@@ -16,31 +29,36 @@ const PopUp = () => {
           spacing={1}
         >
           <Typography gutterBottom variant="h4" component="div">
-            Nicolas CHOMIER
+            {fullName}
           </Typography>
           <Avatar
-            alt="Nicolas Chomier"
-            src="images/moi.jpg"
+            alt={imagePath}
+            src={`images/${imagePath}.jpg`}
             sx={{ width: 80, height: 80 }}
           />
         </Stack>
-        <Typography gutterBottom variant="h6" component="div">
-          Ingénieur Généraliste E.I CESI
+        <Typography
+          gutterBottom
+          variant="h6"
+          component="div"
+          sx={{ color: carmin }}
+        >
+          {type}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          nicolaschomier.pro@gmail.com
+          {email}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          07-61-77-78-65
+          {phone}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          35 ans
+          {age}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Permis B + Véhicule
+          {city}
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Lyon
+          {driveInfo}
         </Typography>
       </CardContent>
     </Card>
