@@ -36,18 +36,18 @@ const LandingPageExperience = ({ data, number }) => {
             <Typography
               variant="h4"
               component="div"
-              sx={{ fontSize: 22, fontWeight: 800, m: 0, color: "#2b3a67" }}
+              sx={{ fontSize: 25, fontWeight: 800, m: 0, color: "#2b3a67" }}
             >
               {companyName}
             </Typography>
-            <Typography component="div" sx={{ fontSize: 18, fontWeight: 500 }}>
+            <Typography component="div" sx={{ fontSize: 18, fontWeight: 800 }}>
               {titleJob}
             </Typography>
             <Typography
               component="div"
               variant="body"
               color="text"
-              sx={{ fontSize: 15 }}
+              sx={{ fontSize: 15, fontStyle: "italic" }}
             >
               {intro}
             </Typography>

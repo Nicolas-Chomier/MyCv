@@ -34,7 +34,7 @@ const LandingPageBottom = ({ data }) => {
             alignItems="center"
             spacing={0.5}
           >
-            <PhoneIphoneIcon fontSize="medium" color="primary" />
+            <PhoneIphoneIcon fontSize="medium" color="black" />
             <Typography
               variant="body"
               color="text"
@@ -50,7 +50,7 @@ const LandingPageBottom = ({ data }) => {
             alignItems="center"
             spacing={0.5}
           >
-            <AlternateEmailIcon fontSize="medium" color="primary" />
+            <AlternateEmailIcon fontSize="medium" color="black" />
             <Typography
               variant="body"
               color="text"

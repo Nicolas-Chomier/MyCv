@@ -8,10 +8,9 @@
       "landing-page-photo landing-page-intro"
       "landing-page-resume landing-page-resume"
       "landing-page-experience landing-page-experience"
-      "landing-page-skills-title landing-page-skills-title"
       "landing-page-skills landing-page-skills"
       "landing-page-bottom landing-page-bottom";
-    grid-template-rows: 5vh 95vh 100vh 200vh 1vh 80vh 5vh;
+    grid-template-rows: 5vh 95vh 100vh 200vh 100vh 5vh;
     grid-template-columns: 50vw 50vw;
     overflow-x: hidden;
   }
@@ -50,26 +49,25 @@
     display: flex;
     justify-content: center;
     align-items: center; /*for vertically center*/
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-experience {
     grid-area: landing-page-experience;
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
-  }
-  .landing-page-skills-title {
-    grid-area: landing-page-skills-title;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /*for vertically center*/
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-skills {
     grid-area: landing-page-skills;
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
-    .recharts-wrapper {
-      font-size: 1.3rem;
+    .MuiTypography-root {
       font-family: "Work Sans", sans-serif;
     }
   }
@@ -77,7 +75,7 @@
     grid-area: landing-page-bottom;
     display: flex;
     justify-content: center;
-    align-items: center; /*for vertically center*/
+    align-items: flex-start; /*for vertically center*/
   }
 }
 

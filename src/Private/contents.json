@@ -81,41 +81,34 @@
             "description": "Préparation, gestion et coordination des « LOOP tests » (Loss of Offsite Power) sur l’EPR d'Olkiluoto. Les « LOOP tests » sont un ensemble de tests visant à contrôler le démarrage des générateurs diesels de secours (EDG), puis des générateurs diesels d’ultime secours (SBO), lors de la perte du réseau électrique (GRID), sur les quatre tranches de la centrale nucléaire.\nLa centrale nucléaire d'Olkiluoto est située sur l'île d'Olkiluoto, à 40 km au sud de Pori, dans le golfe de Botnie à l'ouest de la Finlande."
         }
     },
-    "chart": [
-        {
-            "subject": "Teamwork",
-            "A": 80,
-            "fullMark": 100
-        },
-        {
-            "subject": "Electrotechnic",
-            "A": 75,
-            "fullMark": 100
-        },
-        {
-            "subject": "Process",
-            "A": 70,
-            "fullMark": 100
-        },
-        {
-            "subject": "Industrial programming",
-            "A": 78,
-            "fullMark": 100
-        },
-        {
-            "subject": "JavaScript",
-            "A": 65,
-            "fullMark": 100
-        },
-        {
-            "subject": "Python",
-            "A": 65,
-            "fullMark": 100
-        },
-        {
-            "subject": "English",
-            "A": 80,
-            "fullMark": 100
-        }
+    "skills": [
+        [
+            "Teamwork",
+            4
+        ],
+        [
+            "Electrotechnic",
+            4
+        ],
+        [
+            "Process",
+            3.5
+        ],
+        [
+            "Industrial programming",
+            3.5
+        ],
+        [
+            "JavaScript",
+            3.5
+        ],
+        [
+            "Python",
+            3
+        ],
+        [
+            "English",
+            4
+        ]
     ]
 }

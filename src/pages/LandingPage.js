@@ -15,6 +15,7 @@ import LandingPageBottom from "../components/LandingPageBottom";
 const data = JSON.parse(JSON.stringify(Datas));
 
 const LandingPage = () => {
+  const sectionTilteStyle = { fontSize: 30, fontWeight: 600 };
   return (
     <div className="grid-container-landing-page">
       <div className="landing-page-cv-name">
@@ -49,7 +50,7 @@ const LandingPage = () => {
             gutterBottom
             variant="h3"
             component="div"
-            sx={{ fontSize: 26, fontWeight: 400 }}
+            sx={sectionTilteStyle}
           >
             Resume
           </Typography>
@@ -73,7 +74,7 @@ const LandingPage = () => {
             gutterBottom
             variant="h3"
             component="div"
-            sx={{ fontSize: 26, fontWeight: 400 }}
+            sx={sectionTilteStyle}
           >
             Experiences
           </Typography>
@@ -84,18 +85,30 @@ const LandingPage = () => {
           <LandingPageExperience data={data} number={5} />
         </Stack>
       </div>
-      <div className="landing-page-skills-title" id="skills-div">
-        <Typography
-          gutterBottom
-          variant="h3"
-          component="div"
-          sx={{ fontSize: 26, fontWeight: 400 }}
+      <div className="landing-page-skills" id="skills-div">
+        <Stack
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+          divider={<Divider orientation="horizontal" flexItem />}
+          spacing={4}
         >
-          Skills
-        </Typography>
-      </div>
-      <div className="landing-page-skills">
-        <LandingPageSkills data={data} />
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            sx={sectionTilteStyle}
+          >
+            Skills
+          </Typography>
+          <LandingPageSkills data={data} number={1} />
+          <LandingPageSkills data={data} number={2} />
+          <LandingPageSkills data={data} number={3} />
+          <LandingPageSkills data={data} number={4} />
+          <LandingPageSkills data={data} number={5} />
+          <LandingPageSkills data={data} number={6} />
+          <LandingPageSkills data={data} number={7} />
+        </Stack>
       </div>
       <div className="landing-page-bottom">
         <LandingPageBottom data={data} />
