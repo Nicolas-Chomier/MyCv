@@ -19,7 +19,7 @@
     "intro": {
         "title": "HELLO",
         "subTitle": "About Me",
-        "text": "Ingénieur dans l'industrie, globetrotteur & passionné par les sciences du numérique. J'aime ...."
+        "text": "Ingénieur dans l'industrie, globetrotteur & passionné par les sciences du numérique. J'aime apporter une vision moderne à mes projets."
     },
     "chapter": {
         "title1": "Resume",
@@ -104,7 +104,7 @@
         ],
         [
             "Python",
-            3
+            3.5
         ],
         [
             "English",

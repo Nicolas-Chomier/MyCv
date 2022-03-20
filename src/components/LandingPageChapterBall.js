@@ -22,7 +22,7 @@ const LandingPageChapterBall = ({ data, screenSize }) => {
   };
   const cardContentStyle = { p: 0, "&:last-child": { pb: 0 } };
   const avatarSize = widthLimit ? 120 : 0.1 * screenSize.width + 28;
-  const colorList = ["#FFEC81", "#EF8354", "#EF6F6C"];
+  const colorList = ["#FFDE26", "#EF8354", "#EF6F6C"];
   const buttonStyle = { p: 0 };
   const avatarTextSize = screenSize.width >= 768 ? 22 : 14;
   return (

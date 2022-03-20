@@ -31,7 +31,11 @@ const LandingPageResume = ({ data, number, screenSize }) => {
             gutterBottom
             variant="h4"
             component="div"
-            sx={{ fontSize: widthLimit ? 45 : 30, fontWeight: 800, m: 0 }}
+            sx={{
+              fontSize: widthLimit ? 45 : 30,
+              fontWeight: 800,
+              m: 0,
+            }}
           >
             {year}
           </Typography>

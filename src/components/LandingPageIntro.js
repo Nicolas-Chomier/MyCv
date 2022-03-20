@@ -2,6 +2,7 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import { Stack } from "@mui/material";
 
 const LandingPageIntro = ({ data, screenSize }) => {
   // Screen size implementation
@@ -14,6 +15,13 @@ const LandingPageIntro = ({ data, screenSize }) => {
     maxWidth: "100%",
     borderRadius: 0,
   };
+  const cardStyle2 = {
+    backgroundColor: "transparent",
+    border: "none",
+    boxShadow: "none",
+    maxWidth: "70%",
+    borderRadius: 0,
+  };
   const cardContentStyle = { p: 0, "&:last-child": { pb: 0 } };
   const title = data.intro.title;
   const subTitle = data.intro.subTitle;
@@ -21,33 +29,42 @@ const LandingPageIntro = ({ data, screenSize }) => {
   return (
     <Card sx={cardStyle}>
       <CardContent sx={cardContentStyle}>
-        <Typography
-          gutterBottom
-          variant="h1"
-          component="div"
-          sx={{
-            fontSize: widthLimit ? 95 : 70,
-            m: 0,
-            fontWeight: "bold",
-          }}
+        <Stack
+          direction="column"
+          justifyContent={widthLimit ? "flex-end" : "center"}
+          alignItems={widthLimit ? "flex-start" : "center"}
+          spacing={2}
         >
-          {title}
-        </Typography>
-        <Typography
-          gutterBottom
-          variant="h2"
-          component="div"
-          sx={{ fontSize: widthLimit ? 45 : 33, mb: 1, fontWeight: 400 }}
-        >
-          {subTitle}
-        </Typography>
-        <Typography
-          variant="body"
-          color="text"
-          sx={{ fontSize: widthLimit ? 20 : 16 }}
-        >
-          {text}
-        </Typography>
+          <Typography
+            gutterBottom
+            variant="h1"
+            component="div"
+            sx={{
+              fontSize: widthLimit ? 95 : 70,
+              m: 0,
+              fontWeight: "bold",
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            gutterBottom
+            variant="h2"
+            component="div"
+            sx={{ fontSize: widthLimit ? 45 : 33, mb: 1, fontWeight: 400 }}
+          >
+            {subTitle}
+          </Typography>
+          <Card sx={cardStyle2}>
+            <Typography
+              variant="body"
+              color="text"
+              sx={{ fontSize: widthLimit ? 20 : 16 }}
+            >
+              {text}
+            </Typography>
+          </Card>
+        </Stack>
       </CardContent>
     </Card>
   );

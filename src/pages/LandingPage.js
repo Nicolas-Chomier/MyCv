@@ -71,6 +71,7 @@ const LandingPage = () => {
             variant="h3"
             component="div"
             sx={sectionTilteStyle}
+            style={{ color: "#FFDE26" }}
           >
             Resume
           </Typography>
@@ -95,6 +96,7 @@ const LandingPage = () => {
             variant="h3"
             component="div"
             sx={sectionTilteStyle}
+            style={{ color: "#EF8354" }}
           >
             Experiences
           </Typography>
@@ -118,6 +120,7 @@ const LandingPage = () => {
             variant="h3"
             component="div"
             sx={sectionTilteStyle}
+            style={{ color: "#EF6F6C" }}
           >
             Skills
           </Typography>
