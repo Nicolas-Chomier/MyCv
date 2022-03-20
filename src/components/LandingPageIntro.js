@@ -3,7 +3,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-const LandingPageIntro = ({ data }) => {
+const LandingPageIntro = ({ data, screenSize }) => {
+  // Screen size implementation
+  const widthLimit = screenSize.width >= 1024 ? true : false;
+  // Component features
   const cardStyle = {
     backgroundColor: "transparent",
     border: "none",
@@ -23,7 +26,7 @@ const LandingPageIntro = ({ data }) => {
           variant="h1"
           component="div"
           sx={{
-            fontSize: 95,
+            fontSize: widthLimit ? 95 : 70,
             m: 0,
             fontWeight: "bold",
           }}
@@ -34,11 +37,15 @@ const LandingPageIntro = ({ data }) => {
           gutterBottom
           variant="h2"
           component="div"
-          sx={{ fontSize: 45, mb: 1, fontWeight: 400 }}
+          sx={{ fontSize: widthLimit ? 45 : 33, mb: 1, fontWeight: 400 }}
         >
           {subTitle}
         </Typography>
-        <Typography variant="body" color="text" sx={{ fontSize: 20 }}>
+        <Typography
+          variant="body"
+          color="text"
+          sx={{ fontSize: widthLimit ? 20 : 16 }}
+        >
           {text}
         </Typography>
       </CardContent>

@@ -3,7 +3,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Stack, Typography } from "@mui/material";
 
-const LandingPageResume = ({ data, number }) => {
+const LandingPageResume = ({ data, number, screenSize }) => {
+  // Screen size implementation
+  const widthLimit = screenSize.width >= 1024 ? true : false;
+  // Component features
   const cardStyle = {
     backgroundColor: "transparent",
     border: "none",
@@ -28,14 +31,14 @@ const LandingPageResume = ({ data, number }) => {
             gutterBottom
             variant="h4"
             component="div"
-            sx={{ fontSize: 45, fontWeight: 800, m: 0 }}
+            sx={{ fontSize: widthLimit ? 45 : 30, fontWeight: 800, m: 0 }}
           >
             {year}
           </Typography>
           <Typography
             gutterBottom
             component="div"
-            sx={{ fontSize: 50, fontWeight: 800 }}
+            sx={{ fontSize: widthLimit ? 50 : 35, fontWeight: 800 }}
           >
             {decorator}
           </Typography>

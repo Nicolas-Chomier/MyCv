@@ -3,7 +3,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Stack, Typography, Rating } from "@mui/material";
 
-const LandingPageSkills = ({ data, number }) => {
+const LandingPageSkills = ({ data, number, screenSize }) => {
+  // Screen size implementation
+  const widthLimit = screenSize.width >= 1024 ? true : false;
+  // Component features
   const cardStyle = {
     backgroundColor: "transparent",
     border: "none",
@@ -16,7 +19,7 @@ const LandingPageSkills = ({ data, number }) => {
   const title = skills[0];
   const mark = skills[1];
   const style = {
-    fontSize: 25,
+    fontSize: widthLimit ? 25 : 20,
     m: 0,
     fontWeight: "bold",
   };

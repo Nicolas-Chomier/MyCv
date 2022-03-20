@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LandingPageChapterBall from "../components/LandingPageChapterBall";
 import LandingPageCvName from "../components/LandingPageCvName";
 import LandingPageIntro from "../components/LandingPageIntro";
@@ -13,8 +13,28 @@ import LandingPageBottom from "../components/LandingPageBottom";
 
 //* Main Datas
 const data = JSON.parse(JSON.stringify(Datas));
+//* Screen size calculation
+// Get screen size
+function getWindowSize() {
+  const { innerWidth: width } = window;
+  return {
+    width,
+  };
+}
 
 const LandingPage = () => {
+  // Screen size implementation
+  const [wSize, setwSize] = useState(getWindowSize());
+  useEffect(() => {
+    function handleResize() {
+      setwSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const widthLimit = wSize.width >= 1024 ? true : false;
+  // Landing page const declaration
   const sectionTilteStyle = { fontSize: 30, fontWeight: 600 };
   return (
     <div className="grid-container-landing-page">
@@ -25,17 +45,17 @@ const LandingPage = () => {
         <LandingPageNavbar data={data} />
       </div>
       <div className="landing-page-photo">
-        <LandingPagePhoto data={data} />
+        <LandingPagePhoto data={data} screenSize={wSize} />
       </div>
       <div className="landing-page-intro">
         <Stack
           direction="column"
-          justifyContent="flex-end"
-          alignItems="flex-start"
+          justifyContent={widthLimit ? "flex-end" : "center"}
+          alignItems={widthLimit ? "flex-start" : "center"}
           spacing={9}
         >
-          <LandingPageIntro data={data} />
-          <LandingPageChapterBall data={data} />
+          <LandingPageIntro data={data} screenSize={wSize} />
+          <LandingPageChapterBall data={data} screenSize={wSize} />
         </Stack>
       </div>
       <div className="landing-page-resume" id="resume-div">
@@ -54,11 +74,11 @@ const LandingPage = () => {
           >
             Resume
           </Typography>
-          <LandingPageResume data={data} number={5} />
-          <LandingPageResume data={data} number={4} />
-          <LandingPageResume data={data} number={3} />
-          <LandingPageResume data={data} number={2} />
-          <LandingPageResume data={data} number={1} />
+          <LandingPageResume data={data} number={5} screenSize={wSize} />
+          <LandingPageResume data={data} number={4} screenSize={wSize} />
+          <LandingPageResume data={data} number={3} screenSize={wSize} />
+          <LandingPageResume data={data} number={2} screenSize={wSize} />
+          <LandingPageResume data={data} number={1} screenSize={wSize} />
         </Stack>
       </div>
 
@@ -78,11 +98,11 @@ const LandingPage = () => {
           >
             Experiences
           </Typography>
-          <LandingPageExperience data={data} number={1} />
-          <LandingPageExperience data={data} number={2} />
-          <LandingPageExperience data={data} number={3} />
-          <LandingPageExperience data={data} number={4} />
-          <LandingPageExperience data={data} number={5} />
+          <LandingPageExperience data={data} number={1} screenSize={wSize} />
+          <LandingPageExperience data={data} number={2} screenSize={wSize} />
+          <LandingPageExperience data={data} number={3} screenSize={wSize} />
+          <LandingPageExperience data={data} number={4} screenSize={wSize} />
+          <LandingPageExperience data={data} number={5} screenSize={wSize} />
         </Stack>
       </div>
       <div className="landing-page-skills" id="skills-div">
@@ -101,17 +121,17 @@ const LandingPage = () => {
           >
             Skills
           </Typography>
-          <LandingPageSkills data={data} number={1} />
-          <LandingPageSkills data={data} number={2} />
-          <LandingPageSkills data={data} number={3} />
-          <LandingPageSkills data={data} number={4} />
-          <LandingPageSkills data={data} number={5} />
-          <LandingPageSkills data={data} number={6} />
-          <LandingPageSkills data={data} number={7} />
+          <LandingPageSkills data={data} number={1} screenSize={wSize} />
+          <LandingPageSkills data={data} number={2} screenSize={wSize} />
+          <LandingPageSkills data={data} number={3} screenSize={wSize} />
+          <LandingPageSkills data={data} number={4} screenSize={wSize} />
+          <LandingPageSkills data={data} number={5} screenSize={wSize} />
+          <LandingPageSkills data={data} number={6} screenSize={wSize} />
+          <LandingPageSkills data={data} number={7} screenSize={wSize} />
         </Stack>
       </div>
       <div className="landing-page-bottom">
-        <LandingPageBottom data={data} />
+        <LandingPageBottom data={data} screenSize={wSize} />
       </div>
     </div>
   );

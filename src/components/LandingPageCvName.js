@@ -3,8 +3,8 @@ import { Stack, Typography } from "@mui/material";
 import ScienceTwoToneIcon from "@mui/icons-material/ScienceTwoTone";
 
 const LandingPageCvName = ({ data }) => {
-  //const gold = "#CCA43D";
-  const carmin = "#a63a50";
+  const gold = "#CCA43D";
+  //const carmin = "#a63a50";
   const name = data.generalInfos.name;
   const nickname = data.generalInfos.nickname;
   return (
@@ -15,7 +15,7 @@ const LandingPageCvName = ({ data }) => {
         alignItems="center"
         spacing={1}
       >
-        <ScienceTwoToneIcon fontSize="large" sx={{ fill: carmin }} />
+        <ScienceTwoToneIcon fontSize="large" sx={{ fill: gold }} />
         <Typography variant="h5" align="center" sx={{ pt: 1 }}>
           {nickname}
         </Typography>

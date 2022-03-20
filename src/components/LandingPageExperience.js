@@ -3,7 +3,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Stack, Typography, Avatar } from "@mui/material";
 
-const LandingPageExperience = ({ data, number }) => {
+const LandingPageExperience = ({ data, number, screenSize }) => {
+  // Screen size implementation
+  const widthLimit = screenSize.width >= 1024 ? true : false;
+  // Component features
   const cardStyle = {
     backgroundColor: "transparent",
     border: "none",
@@ -16,12 +19,12 @@ const LandingPageExperience = ({ data, number }) => {
   const titleJob = data.jobExp[`experience${number}`].job;
   const intro = data.jobExp[`experience${number}`].intro;
   const description = data.jobExp[`experience${number}`].description;
-  const avatarSize = 300;
+  const avatarSize = widthLimit ? 300 : 300 - 0.1 * screenSize.width;
 
   return (
     <Card sx={cardStyle}>
       <Stack
-        direction="row"
+        direction={widthLimit ? "row" : "column-reverse"}
         justifyContent="space-between"
         alignItems="center"
         spacing={10}

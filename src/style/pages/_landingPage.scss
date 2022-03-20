@@ -1,4 +1,4 @@
-@media (min-width: 1px) {
+@media (min-width: 1024px) {
   .grid-container-landing-page {
     display: grid;
     width: 100%;
@@ -19,6 +19,10 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 3vw;
+    .MuiTypography-root {
+      /* font-family: "Work Sans", sans-serif; */
+      font-family: "Raleway", sans-serif;
+    }
   }
   .landing-page-navbar {
     grid-area: landing-page-navbar;
@@ -41,7 +45,12 @@
     margin-bottom: 36vh;
     align-items: flex-end; /*for vertically center*/
     .MuiTypography-root {
-      font-family: "Work Sans", sans-serif;
+      /* font-family: "Work Sans", sans-serif; */
+      font-family: "Raleway", sans-serif;
+    }
+    .MuiAvatar-root {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
     }
   }
   .landing-page-resume {
@@ -50,7 +59,7 @@
     justify-content: center;
     align-items: center; /*for vertically center*/
     .MuiTypography-root {
-      font-family: "Work Sans", sans-serif;
+      font-family: "Raleway", sans-serif;
     }
   }
   .landing-page-experience {
@@ -59,7 +68,7 @@
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
     .MuiTypography-root {
-      font-family: "Work Sans", sans-serif;
+      font-family: "Raleway", sans-serif;
     }
   }
   .landing-page-skills {
@@ -68,7 +77,7 @@
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
     .MuiTypography-root {
-      font-family: "Work Sans", sans-serif;
+      font-family: "Raleway", sans-serif;
     }
   }
   .landing-page-bottom {
@@ -76,27 +85,28 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
+    .MuiTypography-root {
+      font-family: "Raleway", sans-serif;
+    }
   }
 }
 
-/* @media (min-width: 1px) {
+@media (max-width: 1023px) {
   .grid-container-landing-page {
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-areas:
-      "landing-page-cv-name landing-page-navbar"
-      "landing-page-photo landing-page-intro"
-      "landing-page-photo landing-page-chapter-ball"
-      "landing-page-resume landing-page-resume"
-      "landing-page-experience-1 landing-page-experience-1"
-      "landing-page-experience-2 landing-page-experience-2"
-      "landing-page-experience-3 landing-page-experience-3"
-      "landing-page-experience-4 landing-page-experience-4"
-      "landing-page-experience-5 landing-page-experience-5"
-      "landing-page-bottom landing-page-bottom";
-    grid-template-rows: 5vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
-    grid-template-columns: 50vw 50vw;
+      "landing-page-cv-name"
+      "landing-page-navbar"
+      "landing-page-photo"
+      "landing-page-intro"
+      "landing-page-resume"
+      "landing-page-experience"
+      "landing-page-skills"
+      "landing-page-bottom";
+    grid-template-rows: 5vh auto auto auto auto auto auto;
+    grid-template-columns: 100vw;
     overflow-x: hidden;
   }
   .landing-page-cv-name {
@@ -113,50 +123,54 @@
     grid-area: landing-page-photo;
     display: flex;
     justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    align-items: center; /*for vertically center*/
   }
   .landing-page-intro {
     grid-area: landing-page-intro;
     display: flex;
     justify-content: center;
-  }
-  .landing-page-chapter-ball {
-    grid-area: landing-page-chapter-ball;
-    display: flex;
-    justify-content: center;
+    align-items: center; /*for vertically center*/
+    margin-bottom: 5vh;
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-resume {
     grid-area: landing-page-resume;
     display: flex;
     justify-content: center;
+    align-items: center; /*for vertically center*/
+    margin-bottom: 5vh;
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
-  .landing-page-experience-1 {
-    grid-area: landing-page-experience-1;
+  .landing-page-experience {
+    grid-area: landing-page-experience;
     display: flex;
     justify-content: center;
+    align-items: flex-start; /*for vertically center*/
+    margin-bottom: 5vh;
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
-  .landing-page-experience-2 {
-    grid-area: landing-page-experience-2;
+  .landing-page-skills {
+    grid-area: landing-page-skills;
     display: flex;
     justify-content: center;
-  }
-  .landing-page-experience-3 {
-    grid-area: landing-page-experience-3;
-    display: flex;
-    justify-content: center;
-  }
-  .landing-page-experience-4 {
-    grid-area: landing-page-experience-4;
-    display: flex;
-    justify-content: center;
-  }
-  .landing-page-experience-5 {
-    grid-area: landing-page-experience-5;
-    display: flex;
-    justify-content: center;
+    align-items: flex-start; /*for vertically center*/
+    margin-bottom: 5vh;
+    .MuiTypography-root {
+      font-family: "Work Sans", sans-serif;
+    }
   }
   .landing-page-bottom {
     grid-area: landing-page-bottom;
     display: flex;
     justify-content: center;
+    align-items: flex-start; /*for vertically center*/
   }
-} */
+}
