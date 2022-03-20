@@ -16,8 +16,9 @@ const PopUp = ({ data }) => {
   const city = data.generalInfos.city;
   const driveInfo = data.generalInfos.driveInfo;
   const imagePath = data.generalInfos.idImage;
-  const gold = "#CCA43D";
+  //const gold = "#CCA43D";
   //const carmin = "#a63a50";
+  const red = "#EF8354";
 
   return (
     <Card sx={{ maxWidth: 300 }}>
@@ -41,7 +42,7 @@ const PopUp = ({ data }) => {
           gutterBottom
           variant="h6"
           component="div"
-          sx={{ color: gold }}
+          sx={{ color: red }}
         >
           {type}
         </Typography>

@@ -6,12 +6,12 @@
     "generalInfos": {
         "nickname": "Nicolas",
         "name": "Chomier",
-        "type": "Ingénieur Généraliste",
+        "type": "Generalist Engineer",
         "email": "nicolaschomier.pro@gmail.com",
         "phone": "07-61-77-78-65",
-        "age": "35 ans",
+        "age": "35 years old",
         "city": "Lyon",
-        "driveInfo": "Permis B + Véhicule",
+        "driveInfo": "Driving licence + Vehicle",
         "idImage": "WagonPic",
         "made": "© 2022 By Nicolas Chomier.",
         "finish": "Proudly created with React, MUI, SASS ."
@@ -19,7 +19,7 @@
     "intro": {
         "title": "HELLO",
         "subTitle": "About Me",
-        "text": "Ingénieur dans l'industrie, globetrotteur & passionné par les sciences du numérique. J'aime apporter une vision moderne à mes projets."
+        "text": "Engineer in the industry, globetrotter & passionate about digital sciences. I like to bring a modern vision to my projects."
     },
     "chapter": {
         "title1": "Resume",
@@ -30,11 +30,11 @@
     "resume": {
         "row5": [
             "2020",
-            "Formation Data Science, le wagon"
+            "Data Science training, the Wagon"
         ],
         "row4": [
             "2016",
-            "Ingénieur généraliste CESI"
+            "Engineer degree (CESI)"
         ],
         "row3": [
             "2010",
@@ -42,43 +42,43 @@
         ],
         "row2": [
             "2008",
-            "BTS Electrotechnique"
+            "BTS in Electrical Engineering"
         ],
         "row1": [
             "2006",
-            "BAC STI Electrotechnique"
+            "BAC STI in Electrical Engineering"
         ]
     },
     "jobExp": {
         "experience1": {
             "company": "Dalkia Air Solutions  /  2021...",
-            "job": "Ingénieur en automatisme industriel",
-            "intro": "LAB est une entreprise qui réalise des solutions techniques pour le traitement des fumées et pour l’épuration des gaz d'échappement à travers le monde.\nLAB travaille avec des grands noms comme Peter DÖHLE, Hapag-Lloyd ou encore MSC.\nDans ce cadre-là ils fournissent clefs en main des équipements type « Scrubber » qui viendront nettoyer les gaz d’échappement sur les navires des clients.",
-            "description": "Sur les navires, je fus responsable de la mise en service de l’installation avec une équipe composée d’automaticiens, de mécaniciens et d’électriciens allant de 3 à 5 personnes, je rendais des comptes en parallèle à l’entreprise cliente (LAB) et au super intendant (représentant officiel de l’entreprise exploitant le navire et utilisant notre système)."
+            "job": "Industrial Automation Engineer",
+            "intro": "WIP",
+            "description": "WIP"
         },
         "experience2": {
-            "company": "Covid et confinement",
-            "job": "Apprentissage en autodidacte de l'informatique",
-            "intro": "LAB est une entreprise qui réalise des solutions techniques pour le traitement des fumées et pour l’épuration des gaz d'échappement à travers le monde.\nLAB travaille avec des grands noms comme Peter DÖHLE, Hapag-Lloyd ou encore MSC.\nDans ce cadre-là ils fournissent clefs en main des équipements type « Scrubber » qui viendront nettoyer les gaz d’échappement sur les navires des clients.",
-            "description": "Sur les navires, je fus responsable de la mise en service de l’installation avec une équipe composée d’automaticiens, de mécaniciens et d’électriciens allant de 3 à 5 personnes, je rendais des comptes en parallèle à l’entreprise cliente (LAB) et au super intendant (représentant officiel de l’entreprise exploitant le navire et utilisant notre système)."
+            "company": "Covid time period",
+            "job": "Self-taught computer skills",
+            "intro": "WIP",
+            "description": "WIP"
         },
         "experience3": {
             "company": "LAB  /  2019-2020",
-            "job": "Ingénieur commissioning offshore",
-            "intro": "LAB est une entreprise qui réalise des solutions techniques pour le traitement des fumées et pour l’épuration des gaz d'échappement à travers le monde.\nLAB travaille avec des grands noms comme Peter DÖHLE, Hapag-Lloyd ou encore MSC.\nDans ce cadre-là ils fournissent clefs en main des équipements type « Scrubber » qui viendront nettoyer les gaz d’échappement sur les navires des clients.",
-            "description": "Sur les navires, je fus responsable de la mise en service de l’installation avec une équipe composée d’automaticiens, de mécaniciens et d’électriciens allant de 3 à 5 personnes, je rendais des comptes en parallèle à l’entreprise cliente (LAB) et au super intendant (représentant officiel de l’entreprise exploitant le navire et utilisant notre système)."
+            "job": "Offshore commissioning engineer",
+            "intro": "LAB is a company that realizes technical solutions for the treatment of smoke and exhaust gases throughout the world.LAB works with big names such as Peter DÖHLE, Hapag-Lloyd or MSC.Within this framework they provide turnkey equipment such as \"Scrubber\" which will come to clean the exhaust gases on the customers' ships.",
+            "description": "On the ships, I was responsible for the commissioning of the installation with a team composed of automaticians, mechanics and electricians ranging from 3 to 5 people, I reported in parallel to the client company (LAB) and to the super steward (official representative of the company operating the ship and using our system)."
         },
         "experience4": {
             "company": "Air Liquide  /  2018-2019",
-            "job": "Ingénieur commissioning offshore",
-            "intro": "Air liquide, est un groupe industriel français d'envergure internationale, spécialiste des gaz industriels, c'est-à-dire des gaz pour l'industrie, la santé, l'environnement et la recherche.",
-            "description": "Air-liquide développe, installe et vend un nouveau produit pour l’industrie et le transport du méthane liquide. Le Turbo-Brayton (TBF) est un équipement capable de sous refroidir de manière très efficace du LNG au travers d’échangeurs de chaleur. Cette technologie est basée sur le cycle de Brayton (inversé) : un gaz réfrigérant est comprimé, puis refroidi pour finalement être détendu dans une turbine conçue pour.Le gaz froid est ainsi utilisé pour refroidir le LNG du client."
+            "job": "Offshore commissioning engineer",
+            "intro": "Air Liquide is an international French industrial group specializing in industrial gases for industry, health, the environment and research.",
+            "description": "Air-liquid develops, installs and sells a new product for the liquid methane industry and transportation. The Turbo-Brayton (TBF) is an equipment capable of sub-cooling LNG in a very efficient way through heat exchangers. The technology is based on the Brayton (reverse) cycle: a refrigerant gas is compressed, cooled and finally expanded in a turbine designed for this purpose. The cold gas is then used to cool the customer's LNG."
         },
         "experience5": {
             "company": "Areva  /  2017-2018",
-            "job": "Ingénieur commissioning onshore",
-            "intro": "Areva est un groupe multinational français spécialisé dans l'énergie nucléaire et les énergies renouvelables.",
-            "description": "Préparation, gestion et coordination des « LOOP tests » (Loss of Offsite Power) sur l’EPR d'Olkiluoto. Les « LOOP tests » sont un ensemble de tests visant à contrôler le démarrage des générateurs diesels de secours (EDG), puis des générateurs diesels d’ultime secours (SBO), lors de la perte du réseau électrique (GRID), sur les quatre tranches de la centrale nucléaire.\nLa centrale nucléaire d'Olkiluoto est située sur l'île d'Olkiluoto, à 40 km au sud de Pori, dans le golfe de Botnie à l'ouest de la Finlande."
+            "job": "Onshore commissioning engineer",
+            "intro": "Areva is a French multinational group specialized in nuclear energy and renewable energies.",
+            "description": "Preparation, management and coordination of the \"LOOP tests\" (Loss of Offsite Power) on the Olkiluoto EPR. The LOOP tests are a set of tests aimed at checking the start-up of the emergency diesel generators (EDGs), and then of the standby diesel generators (SBOs), during the loss of the electrical grid (GRID), on the four units of the nuclear power plant. The Olkiluoto nuclear power plant is located on the island of Olkiluoto, 40 km south of Pori, in the Gulf of Bothnia in western Finland."
         }
     },
     "skills": [
@@ -87,7 +87,7 @@
             4
         ],
         [
-            "Electrotechnic",
+            "Electrotechnical",
             4
         ],
         [

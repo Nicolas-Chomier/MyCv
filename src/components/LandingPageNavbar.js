@@ -10,6 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import pdf from "../doc/test.pdf";
 import Popover from "@mui/material/Popover";
+import Tooltip from "@mui/material/Tooltip";
 import PopUp from "./PopUp";
 
 const LandingPageNavbar = ({ data }) => {
@@ -44,21 +45,27 @@ const LandingPageNavbar = ({ data }) => {
           alignItems="center"
           spacing={2}
         >
-          <IconButton aria-label="download" href={pdf} sx={buttonStyle}>
-            <FilePresentIcon sx={iconStyle} />
-          </IconButton>
-          <IconButton aria-label="download-dt" href={pdf} sx={buttonStyle}>
-            <FolderSharedIcon fontSize="large" sx={iconStyle} />
-          </IconButton>
-          <div>
-            <IconButton
-              aria-label="info"
-              aria-describedby={id}
-              onClick={handleClick}
-              sx={buttonStyle}
-            >
-              <InfoIcon fontSize="large" sx={iconStyle} />
+          <Tooltip title="CV">
+            <IconButton aria-label="download" href={pdf} sx={buttonStyle}>
+              <FilePresentIcon sx={iconStyle} />
             </IconButton>
+          </Tooltip>
+          <Tooltip title="Technical file">
+            <IconButton aria-label="download-dt" href={pdf} sx={buttonStyle}>
+              <FolderSharedIcon fontSize="large" sx={iconStyle} />
+            </IconButton>
+          </Tooltip>
+          <div>
+            <Tooltip title="Infos">
+              <IconButton
+                aria-label="info"
+                aria-describedby={id}
+                onClick={handleClick}
+                sx={buttonStyle}
+              >
+                <InfoIcon fontSize="large" sx={iconStyle} />
+              </IconButton>
+            </Tooltip>
             <Popover
               id={id}
               open={open}
@@ -78,12 +85,20 @@ const LandingPageNavbar = ({ data }) => {
               <PopUp data={data} />
             </Popover>
           </div>
-          <IconButton aria-label="gitHub" href={myGithub} sx={buttonStyle}>
-            <GitHubIcon fontSize="large" sx={iconStyle} />
-          </IconButton>
-          <IconButton aria-label="linkedin" href={myLinkedin} sx={buttonStyle}>
-            <LinkedInIcon fontSize="large" sx={iconStyle} />
-          </IconButton>
+          <Tooltip title="Github">
+            <IconButton aria-label="gitHub" href={myGithub} sx={buttonStyle}>
+              <GitHubIcon fontSize="large" sx={iconStyle} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Linkedin">
+            <IconButton
+              aria-label="linkedin"
+              href={myLinkedin}
+              sx={buttonStyle}
+            >
+              <LinkedInIcon fontSize="large" sx={iconStyle} />
+            </IconButton>
+          </Tooltip>
         </Stack>
       </CardContent>
     </Card>

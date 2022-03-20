@@ -4,7 +4,7 @@ import LandingPageCvName from "../components/LandingPageCvName";
 import LandingPageIntro from "../components/LandingPageIntro";
 import LandingPageNavbar from "../components/LandingPageNavbar";
 import LandingPagePhoto from "../components/LandingPagePhoto";
-import { Stack, Divider, Typography } from "@mui/material";
+import { Stack, Divider, Typography, IconButton } from "@mui/material";
 import Datas from "../Private/contents.json";
 import LandingPageResume from "../components/LandingPageResume";
 import LandingPageExperience from "../components/LandingPageExperience";
@@ -66,15 +66,17 @@ const LandingPage = () => {
           divider={<Divider orientation="horizontal" flexItem />}
           spacing={4}
         >
-          <Typography
-            gutterBottom
-            variant="h3"
-            component="div"
-            sx={sectionTilteStyle}
-            style={{ color: "#FFDE26" }}
-          >
-            Resume
-          </Typography>
+          <IconButton aria-label="anchor" href="#">
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              sx={sectionTilteStyle}
+              style={{ color: "#FFDE26" }}
+            >
+              Resume
+            </Typography>
+          </IconButton>
           <LandingPageResume data={data} number={5} screenSize={wSize} />
           <LandingPageResume data={data} number={4} screenSize={wSize} />
           <LandingPageResume data={data} number={3} screenSize={wSize} />
@@ -91,15 +93,17 @@ const LandingPage = () => {
           divider={<Divider orientation="horizontal" flexItem />}
           spacing={4}
         >
-          <Typography
-            gutterBottom
-            variant="h3"
-            component="div"
-            sx={sectionTilteStyle}
-            style={{ color: "#EF8354" }}
-          >
-            Experiences
-          </Typography>
+          <IconButton aria-label="anchor" href="#">
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              sx={sectionTilteStyle}
+              style={{ color: "#EF8354" }}
+            >
+              Experiences
+            </Typography>
+          </IconButton>
           <LandingPageExperience data={data} number={1} screenSize={wSize} />
           <LandingPageExperience data={data} number={2} screenSize={wSize} />
           <LandingPageExperience data={data} number={3} screenSize={wSize} />
@@ -115,15 +119,17 @@ const LandingPage = () => {
           divider={<Divider orientation="horizontal" flexItem />}
           spacing={4}
         >
-          <Typography
-            gutterBottom
-            variant="h3"
-            component="div"
-            sx={sectionTilteStyle}
-            style={{ color: "#EF6F6C" }}
-          >
-            Skills
-          </Typography>
+          <IconButton aria-label="anchor" href="#">
+            <Typography
+              gutterBottom
+              variant="h3"
+              component="div"
+              sx={sectionTilteStyle}
+              style={{ color: "#EF6F6C" }}
+            >
+              Skills
+            </Typography>
+          </IconButton>
           <LandingPageSkills data={data} number={1} screenSize={wSize} />
           <LandingPageSkills data={data} number={2} screenSize={wSize} />
           <LandingPageSkills data={data} number={3} screenSize={wSize} />
