@@ -10,7 +10,7 @@
       "landing-page-experience landing-page-experience"
       "landing-page-skills landing-page-skills"
       "landing-page-bottom landing-page-bottom";
-    grid-template-rows: 5vh 95vh 100vh 200vh 100vh 5vh;
+    grid-template-rows: 6vh 94vh auto auto auto auto;
     grid-template-columns: 50vw 50vw;
     overflow-x: hidden;
   }
@@ -58,6 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center; /*for vertically center*/
+    margin-top: 15vh;
     .MuiTypography-root {
       font-family: "Raleway", sans-serif;
     }
@@ -67,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
+    margin-top: 15vh;
     .MuiTypography-root {
       font-family: "Raleway", sans-serif;
     }
@@ -76,6 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
+    margin-top: 15vh;
     .MuiTypography-root {
       font-family: "Raleway", sans-serif;
     }
@@ -85,6 +88,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; /*for vertically center*/
+    margin-top: 15vh;
+    margin-bottom: 3vh;
     .MuiTypography-root {
       font-family: "Raleway", sans-serif;
     }
