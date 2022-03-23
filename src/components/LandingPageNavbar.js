@@ -32,7 +32,7 @@ const LandingPageNavbar = ({ data }) => {
     border: "none",
     boxShadow: "none",
   };
-  const cardContentStyle = { pt: 2.4, "&:last-child": { pb: 0 } };
+  const cardContentStyle = { p: 0, "&:last-child": { p: 0 } };
   const iconStyle = { fill: "#2A2A2A", fontSize: 30 };
   const buttonStyle = { p: 0 };
   //

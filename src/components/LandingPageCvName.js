@@ -19,13 +19,13 @@ const LandingPageCvName = ({ data }) => {
         <Tooltip title="V2.1">
           <ScienceTwoToneIcon fontSize="large" sx={{ fill: red }} />
         </Tooltip>
-        <Typography variant="h5" align="center" sx={{ pt: 1 }}>
+        <Typography variant="h5" align="center" sx={{ pt: 0 }}>
           {nickname}
         </Typography>
         <Typography
           variant="h5"
           align="center"
-          sx={{ pt: 1, fontWeight: "bold" }}
+          sx={{ pt: 0, fontWeight: "bold" }}
         >
           {name}
         </Typography>

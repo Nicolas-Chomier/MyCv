@@ -12,7 +12,6 @@ const LandingPageIntro = ({ data, screenSize }) => {
     backgroundColor: "transparent",
     border: "none",
     boxShadow: "none",
-    maxWidth: "100%",
     borderRadius: 0,
   };
   const cardStyle2 = {

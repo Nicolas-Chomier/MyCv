@@ -84,7 +84,6 @@ const LandingPage = () => {
           <LandingPageResume data={data} number={1} screenSize={wSize} />
         </Stack>
       </div>
-
       <div className="landing-page-experience" id="experience-div">
         <Stack
           direction="column"
