@@ -136,6 +136,7 @@ const LandingPage = () => {
           <LandingPageSkills data={data} number={5} screenSize={wSize} />
           <LandingPageSkills data={data} number={6} screenSize={wSize} />
           <LandingPageSkills data={data} number={7} screenSize={wSize} />
+          <LandingPageSkills data={data} number={8} screenSize={wSize} />
         </Stack>
       </div>
       <div className="landing-page-bottom">

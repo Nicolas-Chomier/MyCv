@@ -8,7 +8,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
-import pdf from "../doc/test.pdf";
+import pdf from "../doc/CV_Nicolas_Chomier-V4.pdf";
 import Popover from "@mui/material/Popover";
 import Tooltip from "@mui/material/Tooltip";
 import PopUp from "./PopUp";
