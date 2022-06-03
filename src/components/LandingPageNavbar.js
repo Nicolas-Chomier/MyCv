@@ -8,7 +8,8 @@ import InfoIcon from "@mui/icons-material/Info";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
-import pdf from "../doc/CV_Nicolas_Chomier-V4.pdf";
+import CV from "../doc/CV_V5.pdf";
+import DT from "../doc/DT_V5.pdf";
 import Popover from "@mui/material/Popover";
 import Tooltip from "@mui/material/Tooltip";
 import PopUp from "./PopUp";
@@ -46,12 +47,12 @@ const LandingPageNavbar = ({ data }) => {
           spacing={2}
         >
           <Tooltip title="CV">
-            <IconButton aria-label="download" href={pdf} sx={buttonStyle}>
+            <IconButton aria-label="download" href={CV} sx={buttonStyle}>
               <FilePresentIcon sx={iconStyle} />
             </IconButton>
           </Tooltip>
           <Tooltip title="Technical file">
-            <IconButton aria-label="download-dt" href={pdf} sx={buttonStyle}>
+            <IconButton aria-label="download-dt" href={DT} sx={buttonStyle}>
               <FolderSharedIcon fontSize="large" sx={iconStyle} />
             </IconButton>
           </Tooltip>

@@ -17,7 +17,7 @@ const LandingPageBottom = ({ data, screenSize }) => {
     borderRadius: 0,
   };
   const cardContentStyle = { p: 0, "&:last-child": { pb: 0 } };
-  const botStyle = { fontSize: 12, fontWeight: 200, mx: 10 };
+  const botStyle = { fontSize: 12, fontWeight: 600, mx: 10 };
   const email = data.generalInfos.email;
   const phone = data.generalInfos.phone;
   const madeBy = data.generalInfos.made;
@@ -65,7 +65,7 @@ const LandingPageBottom = ({ data, screenSize }) => {
               gutterBottom
               variant="h4"
               component="div"
-              sx={{ fontSize: 12, fontWeight: 200, m: 0, fontStyle: "italic" }}
+              sx={{ fontSize: 12, fontWeight: 600, m: 0, fontStyle: "italic" }}
             >
               {finish}
             </Typography>

@@ -22,7 +22,8 @@ const LandingPageChapterBall = ({ data, screenSize }) => {
   };
   const cardContentStyle = { p: 0, "&:last-child": { pb: 0 } };
   const avatarSize = widthLimit ? 120 : 0.1 * screenSize.width + 28;
-  const colorList = ["#FFDE26", "#EF8354", "#EF6F6C"];
+  //const colorList = ["#FFDE26", "#EF8354", "#EF6F6C"];
+  const themeColor = "#ff9c43";
   const buttonStyle = { p: 0 };
   const avatarTextSize = screenSize.width >= 768 ? 22 : 14;
   return (
@@ -39,7 +40,7 @@ const LandingPageChapterBall = ({ data, screenSize }) => {
               sx={{
                 width: avatarSize,
                 height: avatarSize,
-                bgcolor: colorList[0],
+                bgcolor: themeColor, //colorList[0],
                 color: "black",
 
                 fontSize: avatarTextSize,
@@ -57,7 +58,7 @@ const LandingPageChapterBall = ({ data, screenSize }) => {
               sx={{
                 width: avatarSize,
                 height: avatarSize,
-                bgcolor: colorList[1],
+                bgcolor: themeColor, //colorList[1],
                 color: "black",
                 fontSize: avatarTextSize,
               }}
@@ -70,7 +71,7 @@ const LandingPageChapterBall = ({ data, screenSize }) => {
               sx={{
                 width: avatarSize,
                 height: avatarSize,
-                bgcolor: colorList[2],
+                bgcolor: themeColor, //colorList[2],
                 /* border: "0.1px solid black", */
                 color: "black",
                 fontSize: avatarTextSize,

@@ -18,7 +18,7 @@ const PopUp = ({ data }) => {
   const imagePath = data.generalInfos.idImage;
   //const gold = "#CCA43D";
   //const carmin = "#a63a50";
-  const red = "#EF8354";
+  const red = "#ff9c43";
 
   return (
     <Card sx={{ maxWidth: 300 }}>

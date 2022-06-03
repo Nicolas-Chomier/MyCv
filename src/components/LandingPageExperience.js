@@ -39,18 +39,21 @@ const LandingPageExperience = ({ data, number, screenSize }) => {
             <Typography
               variant="h4"
               component="div"
-              sx={{ fontSize: 25, fontWeight: 800, m: 0, color: "#2b3a67" }}
+              sx={{ fontSize: 25, fontWeight: 800, m: 0 }} // "#2b3a67"
             >
               {companyName}
             </Typography>
-            <Typography component="div" sx={{ fontSize: 18, fontWeight: 800 }}>
+            <Typography
+              component="div"
+              sx={{ fontSize: 18, fontWeight: 800, color: "#ff9c43" }}
+            >
               {titleJob}
             </Typography>
             <Typography
               component="div"
               variant="body"
               color="text"
-              sx={{ fontSize: 15, fontStyle: "italic" }}
+              sx={{ fontSize: 18, fontStyle: "italic", fontWeight: 600 }}
             >
               {intro}
             </Typography>
@@ -58,7 +61,7 @@ const LandingPageExperience = ({ data, number, screenSize }) => {
               component="div"
               variant="body"
               color="text"
-              sx={{ fontSize: 15 }}
+              sx={{ fontSize: 18, fontWeight: 600 }}
             >
               {description}
             </Typography>
@@ -72,7 +75,7 @@ const LandingPageExperience = ({ data, number, screenSize }) => {
             sx={{
               width: avatarSize,
               height: avatarSize,
-              border: "0.1px solid grey",
+              border: "0.1px solid #ff9c43",
             }}
           />
         </CardContent>

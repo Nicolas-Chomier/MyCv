@@ -37,6 +37,7 @@ const LandingPageSkills = ({ data, number, screenSize }) => {
             {title}
           </Typography>
           <Rating
+            sx={{ color: "#ff9c43" }}
             name="half-rating-read"
             defaultValue={mark}
             precision={0.5}
