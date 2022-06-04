@@ -17,7 +17,7 @@ const LandingPageCvName = ({ data }) => {
         alignItems="center"
         spacing={1}
       >
-        <Tooltip title="V2.3">
+        <Tooltip title="V2.4">
           <ScienceTwoToneIcon sx={{ fill: black, fontSize: 30 }} />
         </Tooltip>
         <Typography variant="h5" align="center" sx={{ pt: 0 }}>
