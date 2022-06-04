@@ -66,19 +66,19 @@
             "company": "LAB  /  2019-2020",
             "job": "Offshore commissioning engineer",
             "intro": "LAB is a company that realizes technical solutions for the treatment of smoke and exhaust gases throughout the world.LAB works with big names such as Peter DÖHLE, Hapag-Lloyd or MSC.Within this framework they provide turnkey equipment such as \"Scrubber\" which will come to clean the exhaust gases on the customers' ships.",
-            "description": "On the ships, I am responsible for the commissioning of the installation with a team composed of mechanics and electricians, ranging from 3 to 5 people, I report in parallel to the client company (LAB) to the client company (LAB) and to the super steward (official representative of the company operating the operating the vessel and using our system)."
+            "description": "On the ships, I am responsible for the commissioning of the installation with a team composed of mechanics and electricians, ranging from 3 to 5 people, I report in parallel to the client company (LAB) and to the super steward (official representative of the owners)."
         },
         "experience4": {
             "company": "Air Liquide  /  2018-2019",
             "job": "Offshore commissioning engineer",
             "intro": "Air-liquid develops, installs and sells a new product for the liquid methane industry and transportation. The Turbo-Brayton (TBF) is an equipment capable of sub-cooling LNG in a very efficient way through heat exchangers. The technology is based on the Brayton (reverse) cycle: a refrigerant gas is compressed, cooled and finally expanded in a turbine designed for this purpose. The cold gas is then used to cool the customer's LNG.",
-            "description": "On the ships, I was responsible for the commissioning of the Turbo-Brayton with a team composed of 1 to 4 commissioning engineers. I was responsible for the commissioning of the Turbo-Brayton with a team composed of 1 to 4 commissioning engineers, I reported in parallel to the customer company (ALAT)."
+            "description": "On the ships, I was responsible for the commissioning of the Turbo-Brayton with a team composed of 1 to 4 commissioning engineers. I reported in parallel to the customer company (ALAT)."
         },
         "experience5": {
             "company": "Areva  /  2017-2018",
             "job": "Onshore commissioning engineer",
             "intro": "Areva is a French multinational group specialized in nuclear energy and renewable energies.",
-            "description": "My mission consisted in the preparation, management and coordination of the 'LOOP tests' (Loss of Offsite Power) on the Olkiluoto EPR. The 'LOOP tests' are a set of tests aiming at controlling the start-up of the emergency diesel generators (EDG), then the diesel generators (EDGs), then of the last standby diesel generators (SBOs), during the loss of the electrical grid (GRID), on the (GRID), on the four units of the nuclear power plant."
+            "description": "My mission consisted in the preparation, management and coordination of the 'LOOP tests' (Loss of Offsite Power) on the Olkiluoto EPR. The 'LOOP tests' are a set of tests aiming at controlling the start-up of the emergency diesel generators (EDG), during the loss of the electrical grid (GRID), on the four units of the nuclear power plant."
         }
     },
     "skills": [
